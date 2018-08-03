@@ -1,9 +1,10 @@
 import json
 
-with open('jawiki-country.json') as jfile:
-    jline = jfile.readline()
-    while jline:
-        jdict = json.loads(jline)
-        if jdict['title'] == 'イギリス':
-            print(jdict['text'])
-        jline = jfile.readline()
+
+with open("jawiki-country.json", "r") as file:
+    line = file.readline() 
+    while line:
+        json_dict = json.loads(line)
+        if json_dict['title'] == 'イギリス':
+            print(json_dict['text'])
+        line = file.readline()
