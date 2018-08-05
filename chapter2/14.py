@@ -1,10 +1,8 @@
 N = input()
 count = 0
-with open('hightemp.txt') as input_file,\
-      open('new.txt', 'a') as new_file:
-
+with open('hightemp.txt') as input_file:
       for line in input_file:
-          new_file.write(line)
+          print(line)
           count += 1
           if count == int(N):
               break

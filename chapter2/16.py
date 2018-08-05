@@ -12,11 +12,8 @@ with open("hightemp.txt", "r") as file:
     for i in range(file_len):
         text += Lines[i]
         count += 1
-        
-        if count == split:
-            count = 0
-            with open("N_split_file{}".format(file_num), "w") as new_file:
+        if (count%split == 0) or count == file_len:
+            with open("N_split_file{}.txt".format(file_num), "w") as new_file:
                 new_file.write(text)
             text = ''
             file_num += 1
-        
