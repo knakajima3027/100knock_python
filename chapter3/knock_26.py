@@ -25,4 +25,4 @@ uk_dict = {}
 for line in lines2:
     uk_dict[line[0]] = line[1]
     
-print(uk_dict)
+print(cut_mark(uk_dict))
