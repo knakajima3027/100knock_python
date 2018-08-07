@@ -26,7 +26,7 @@ def cut_url_mark(mark_dict): #urlをカット
             '''
     pattern = re.compile(regex, re.VERBOSE)
     for key in mark_dict.keys():
-        mark_dict[key] = pattern.sub('', mark_dict[key])
+        mark_dict[key] = pattern.sub(r'\1', mark_dict[key])
     return mark_dict
 
 regex1 = r'''\{\{基礎情報.*?$
