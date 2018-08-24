@@ -22,5 +22,6 @@ with open('neko.txt.mecab') as mec_text:
             map_list.append(dic)
             
         text = mec_text.readline()
-        
-pprint(map_list)    
+
+if __name__ == '__main__':
+    pprint(map_list)    
