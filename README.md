@@ -4,4 +4,4 @@
 * chapter1 (完了)  
 * chapter2 (完了)  
 * chapter3 (完了)  
-* chapter4 (37まで完了)  
+* chapter4 (完了)  
