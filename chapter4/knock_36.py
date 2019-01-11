@@ -1,6 +1,6 @@
 import MeCab
 import collections
-from pprint import pprint 
+from pprint import pprint
 
 word_list = []
 tagger = MeCab.Tagger("-Owakati")
@@ -15,4 +15,5 @@ with open('neko.txt') as neko_text:
         text = neko_text.readline()
 
 counter = collections.Counter(word_list)
-pprint(counter.most_common())
+if __name__ == '__main__':
+    pprint(counter.most_common())
