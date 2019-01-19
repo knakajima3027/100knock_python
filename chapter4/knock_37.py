@@ -1,9 +1,9 @@
 import MeCab
 import collections
 import matplotlib.pyplot as plt
-from pprint import pprint 
+import matplotlib as mpl
 
-
+mpl.rcParams['font.family'] = 'AppleGothic'
 word_list = []
 tagger = MeCab.Tagger("-Owakati")
 
@@ -26,6 +26,6 @@ for i in range(10):
     left.append(i+1)
     height.append(counter.most_common()[i][1])
     label.append(counter.most_common()[i][0])
-    
+
 plt.bar(left, height, tick_label=label)
 plt.show()
